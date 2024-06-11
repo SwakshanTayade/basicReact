@@ -18,10 +18,10 @@ const Header = (props) => {
             <img src={logo} alt="" />
             <div>
 
-                <Link to="/tvshows"> TV Shows</Link>
-                <Link to="/movies"> Movies</Link>
-                <Link to="/recentlyadded"> Recently Added</Link>
-                <Link to="/mylist"> My List</Link>
+                <Link to="/"> TV Shows</Link>
+                <Link to="/"> Movies</Link>
+                <Link to="/"> Recently Added</Link>
+                <Link to="/"> My List</Link>
             </div>
 
             <span className="searchContainer">
