@@ -72,7 +72,7 @@ const Home = (props) => {
 
     try {
       const apiKey = import.meta.env.REACT_APP_OMDB_API_KEY;
-      const url = `http://www.omdbapi.com/?s=${searchQuery}&apikey=${apiKey}`
+      const url = `https://www.omdbapi.com/?s=${searchQuery}&apikey=${apiKey}`
       const response = await axios.get(url)
 
       if(response.data.Search && response.data.Search>0){
@@ -97,7 +97,7 @@ const Home = (props) => {
       const defaultFun = async () => {
         try {
           const apiKey = import.meta.env.REACT_APP_OMDB_API_KEY;
-          const defaulturl = `http://www.omdbapi.com/?s=star wars&apikey=${apiKey}`;
+          const defaulturl = `https://www.omdbapi.com/?s=star wars&apikey=${apiKey}`;
           const response = await axios.get(defaulturl);
 
           setTopMovies(response.data.Search);
