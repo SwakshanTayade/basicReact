@@ -1,0 +1,48 @@
+.banner {
+    height: 400px;
+    background-color: rgb(16, 16, 16);
+}
+
+.row {
+
+
+    >h2{
+        margin: .3rem;
+    }
+    >div {
+        padding: .4rem;
+        display: flex;
+        align-items: center;
+        gap: .3vmax;
+        box-sizing: border-box;
+        overflow-x: auto;
+        
+        >.card{
+            
+            >img {
+                opacity: .8;
+                transition: all 1s;
+                box-sizing: border-box;
+                height: 250px;
+                width: 11vmax;
+        
+                &:hover {
+                    transform: translateY(-10px);
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+            >p{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// .banner{
+//     border: 2px solid red;
+//     display: flex;
+//     box-sizing: border-box;
+//     align-items: center;
+    
+// }

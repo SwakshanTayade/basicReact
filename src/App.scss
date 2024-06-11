@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    background-color: rgb(16,16,16);
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    > img{
+        height: 70%;
+    }
+    > div{
+        // border: 2px solid red;
+        width: 100%;
+        margin-left: 4vmax;
+
+        > a{
+            margin: 3vmax;
+            font-size: larger;
+            font-family: sans-serif;
+            
+        }
+    }
+    > .searchContainer svg{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+}
+
+.searchContainer{
+    // border: 2px solid yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: .2vmax;
+    border: 2px 3px solid red;
+    width: 20%;
+    > input{
+        width: 100%;
+        border: 2px solid red;
+        padding: 10px;
+    }
+}
